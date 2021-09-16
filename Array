@@ -1,0 +1,73 @@
+
+
+void main() {
+ final List<String> studentArr = <String>[
+'Kalpit Seksariya',
+'Gaurang Gajera',
+'Bollam saiprakash',
+'Dhruv Vaghela',
+'Jaydeep Dhamecha',
+'Jigar Pandya',
+'Riddhi Bhavsar',
+'Ankit Jadav',
+'Jayesh Gurudayalani',
+'Charmi Goswami',
+'Manish Mundra ',
+'Siddarth Koshiyar ',
+'Anand Sharma ',
+'Chirag Rami ',
+'Akash Thakkar',
+'Khushi Mundra',
+'Ami Thakkar',
+'Ashutosh Dave',
+'Dhruv Samani',
+'Sajid Shaikh ',
+'QURESHI MOHAMMADJALAL',
+'Devang Patel',
+'Pravin Fofariya ',
+'Raj Singhala',
+'Mahesh Kumar Dey',
+'Akshat Pujara',
+'Shivam Pathak',
+'Suhas Vaishnav',
+'Nirbhay Goswami',
+'Manjeet Kaur Bhasin',
+'Yash Parmar',
+'Rutvik Dhami',
+'Harsh Shah',
+'Farhan Shaikh ',
+'Priyank Jamvecha',
+'Rutvik Jamvecha',
+'Raj Singhala',
+'SRINIVAS KALYAN MORLA',
+'Madhupada Vinay',
+'Namrata Jenish kacha',
+'Nisarg Parikh',
+'Ruchi Kariya',
+'Jhanvi Vaishnav',
+'Dhruv Sanjaybhai Kikani ',
+'Kushal jain',
+'Renish Dudhat',
+'kushal jain',
+'Snehal Prajapati',
+];
+  
+studentArr.shuffle();
+ studentArr.sort();
+var len = studentArr  .length;
+
+var size = 4;
+  
+var chunks = [];
+
+
+for(var i = 0; i< len; i+= size)
+{    
+    var end = (i+size<len)?i+size:len;
+    chunks.add(studentArr .sublist(i,end));
+ 
+}
+
+  print (chunks);
+
+}
