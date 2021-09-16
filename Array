@@ -53,7 +53,7 @@ void main() {
 ];
   
 studentArr.shuffle();
- studentArr.sort();
+// studentArr.sort();
 var len = studentArr  .length;
 
 var size = 4;
